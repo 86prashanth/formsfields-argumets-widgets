@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <body>
+        <fieldset>
+            <legend>Form</legend>
+            <form action="" method="POST">
+                {% csrf_token %} {{form}}
+                <input type="submit" value="submit">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>form.as_table</legend>
+            <form action="" method="POST">
+                {% csrf_token %} {{form.as_table}}
+                <input type="submit" value="submit">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>form.as_p</legend>
+            <form action="" method="post">
+                {% csrf_token %} {{form.as_p}}
+                <input type="submit" value="submit">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>form.as_ul</legend>
+            <form action="" method="post">
+                {% csrf_token %} {{form.as_ul}}
+                <input type="submit" value="submit"> </form>
+        </fieldset>
+        <fieldset>
+            <legend>form.name_of_field</legend>
+            <form action="" method="post">
+                {% csrf_token %} name:{{form.name}} email: {{form.email}} mobile: {{form.mobile}}
+                <input type="submit" value="submit">
+            </form>
+        </fieldset>
+
+
+
+    </body>
+
+</head>
+
+</html>
